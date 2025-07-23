@@ -16,6 +16,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: _pages[_selectedIndex],
       bottomNavigationBar: CurvedNavigationBar(
         items: const [
@@ -23,8 +24,8 @@ class _MainPageState extends State<MainPage> {
           Icon(Icons.home, size: 30, color: Colors.white),
           Icon(Icons.person, size: 30, color: Colors.white),
         ],
-        color: Colors.deepPurple,
-        backgroundColor: Colors.white,
+        color: Colors.deepPurple[900]!,
+        backgroundColor: Colors.transparent,
         buttonBackgroundColor: Colors.deepPurple,
         height: 60,
         index: _selectedIndex,
