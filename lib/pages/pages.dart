@@ -3,3 +3,4 @@ export 'MainPage.dart';
 export 'ProfilePage.dart';
 export 'FavoritePage.dart';
 export 'ZarSayfasiPage.dart';
+export 'YaziTuraPage.dart';

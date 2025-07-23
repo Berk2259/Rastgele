@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FavoritePage extends StatelessWidget {
-  const FavoritePage({super.key});
+class YaziTuraPage extends StatelessWidget {
+  const YaziTuraPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +10,14 @@ class FavoritePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Favoriler',
+          'Yazı Tura Sayfası',
           style: TextStyle(fontSize: 24, color: Colors.white),
         ),
         backgroundColor: Colors.deepPurple[900],
       ),
       body: Center(
         child: Text(
-          'Favori Sayfası İçeriği',
+          'Yazı Tura Sayfası İçeriği',
           style: TextStyle(fontSize: 24, color: Colors.deepPurple),
         ),
       ),

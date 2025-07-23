@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:rastgele/pages/pages.dart';
 
-class zar extends StatelessWidget {
-  const zar({super.key});
+class YaziTura extends StatelessWidget {
+  const YaziTura({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class zar extends StatelessWidget {
       height: 170,
       width: 170,
       decoration: BoxDecoration(
-        color: Colors.deepOrangeAccent,
+        color: Colors.lightBlueAccent,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
@@ -29,7 +29,7 @@ class zar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image(
-                  image: AssetImage('assets/images/dice.png'),
+                  image: AssetImage('assets/images/dollar.png'),
                   width: 50,
                   height: 70,
                 ),
@@ -44,13 +44,12 @@ class zar extends StatelessWidget {
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder:
-                          (context) => ZarSayfasiPage(), // ← doğru kullanım
+                      builder: (context) => YaziTuraPage(), // ← doğru kullanım
                     ),
                   ),
               child: Text(
-                'Zar At',
-                style: TextStyle(fontSize: 18, color: Colors.deepOrangeAccent),
+                'Yazı Tura ',
+                style: TextStyle(fontSize: 18, color: Colors.lightBlueAccent),
               ),
             ),
           ),
