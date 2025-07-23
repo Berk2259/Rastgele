@@ -5,3 +5,4 @@ export 'FavoritePage.dart';
 export 'ZarSayfasiPage.dart';
 export 'YaziTuraPage.dart';
 export 'NeYesemPage.dart';
+export 'NeYapsamPage.dart';

@@ -29,6 +29,7 @@ class HomePage extends StatelessWidget {
           Row(
             children: [
               Padding(padding: const EdgeInsets.all(16.0), child: NeYesem()),
+              Padding(padding: const EdgeInsets.all(16.0), child: NeYapsam()),
             ],
           ),
         ],
