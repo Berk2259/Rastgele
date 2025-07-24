@@ -37,6 +37,7 @@ dependencies:
   curved_navigation_bar: ^1.0.6
   font_awesome_flutter: ^10.8.0
   flutter_cube: ^0.1.0
+  flutter_fortune_wheel: ^1.2.1
 
 dev_dependencies:
   flutter_test:
