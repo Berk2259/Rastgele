@@ -8,3 +8,4 @@ export 'NeYesemPage.dart';
 export 'NeYapsamPage.dart';
 export 'CarkCevirmePage.dart';
 export 'NeIzlesemPage.dart';
+export 'NeOkusamPage.dart';

@@ -18,30 +18,41 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.deepPurple[900],
       ),
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Padding(padding: const EdgeInsets.all(16.0), child: zar()),
-              Padding(padding: const EdgeInsets.all(16.0), child: YaziTura()),
-            ],
-          ),
-          Row(
-            children: [
-              Padding(padding: const EdgeInsets.all(16.0), child: NeYesem()),
-              Padding(padding: const EdgeInsets.all(16.0), child: NeYapsam()),
-            ],
-          ),
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: CarkCevirme(),
-              ),
-              Padding(padding: const EdgeInsets.all(16.0), child: NeIzlesem()),
-            ],
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Padding(padding: const EdgeInsets.all(16.0), child: zar()),
+                Padding(padding: const EdgeInsets.all(16.0), child: YaziTura()),
+              ],
+            ),
+            Row(
+              children: [
+                Padding(padding: const EdgeInsets.all(16.0), child: NeYesem()),
+                Padding(padding: const EdgeInsets.all(16.0), child: NeYapsam()),
+              ],
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: CarkCevirme(),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: NeIzlesem(),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Padding(padding: const EdgeInsets.all(16.0), child: NeOkusam()),
+              ],
+            ),
+            SizedBox(height: 100),
+          ],
+        ),
       ),
     );
   }
