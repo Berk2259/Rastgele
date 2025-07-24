@@ -26,7 +26,7 @@ class _MainPageState extends State<MainPage> {
         ],
         color: Colors.deepPurple[900]!,
         backgroundColor: Colors.transparent,
-        buttonBackgroundColor: Colors.deepPurple,
+        buttonBackgroundColor: Colors.deepPurple[900],
         height: 60,
         index: _selectedIndex,
         onTap: (index) {
