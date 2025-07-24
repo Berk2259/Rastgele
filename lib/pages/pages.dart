@@ -7,3 +7,4 @@ export 'YaziTuraPage.dart';
 export 'NeYesemPage.dart';
 export 'NeYapsamPage.dart';
 export 'CarkCevirmePage.dart';
+export 'NeIzlesemPage.dart';

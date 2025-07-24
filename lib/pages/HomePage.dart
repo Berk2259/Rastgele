@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:rastgele/pages/pages.dart';
-import 'package:rastgele/widget/cark_cevirme.dart';
 import 'package:rastgele/widget/widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -39,6 +38,7 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: CarkCevirme(),
               ),
+              Padding(padding: const EdgeInsets.all(16.0), child: NeIzlesem()),
             ],
           ),
         ],
