@@ -48,6 +48,10 @@ class HomePage extends StatelessWidget {
             Row(
               children: [
                 Padding(padding: const EdgeInsets.all(16.0), child: NeOkusam()),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: NeDinlesem(),
+                ),
               ],
             ),
             SizedBox(height: 100),

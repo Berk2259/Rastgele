@@ -78,6 +78,7 @@ class _ZarSayfasiPageState extends State<ZarSayfasiPage> {
     return Scaffold(
       backgroundColor: Colors.deepPurple[500],
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         centerTitle: true,
         title: const Text(
           'Zar At',

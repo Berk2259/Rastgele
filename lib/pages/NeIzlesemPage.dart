@@ -11,6 +11,7 @@ class NeIzlesemPage extends StatelessWidget {
         backgroundColor: Colors.deepPurple[900],
         centerTitle: true,
         title: Text('Ne İzlesem', style: TextStyle(color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
     );
   }

@@ -7,3 +7,4 @@ export 'ne_yapsam.dart';
 export 'cark_cevirme.dart';
 export 'ne_izlesem.dart';
 export 'ne_okusam.dart';
+export 'ne_dinlesem.dart';

@@ -10,6 +10,7 @@ class NeYapsamPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple[900],
         centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
           'Ne Yapsam',
           style: TextStyle(color: Colors.white, fontSize: 24),

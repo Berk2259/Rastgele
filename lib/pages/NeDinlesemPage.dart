@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NeYesemPage extends StatelessWidget {
-  const NeYesemPage({super.key});
+class NeDinlesemPage extends StatelessWidget {
+  const NeDinlesemPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,12 +9,9 @@ class NeYesemPage extends StatelessWidget {
       backgroundColor: Colors.deepPurple[500],
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
-          'Ne Yapsam',
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.deepPurple[900],
+        title: Text('Ne Dinlesem', style: TextStyle(color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
     );
   }
