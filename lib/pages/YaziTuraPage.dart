@@ -56,7 +56,9 @@ class _YaziTuraPageState extends State<YaziTuraPage>
     });
 
     final rotations = 10; // kaç tam tur dönecek
-    final endAngle = (rotations * 2 * pi) + (_isFront ? 0 : pi); //ön yüz (0 radyan) ya da arka yüz (pi radyan)
+    final endAngle =
+        (rotations * 2 * pi) +
+        (_isFront ? 0 : pi); //ön yüz (0 radyan) ya da arka yüz (pi radyan)
 
     _animation = Tween<double>(
       begin: 0,
@@ -67,13 +69,18 @@ class _YaziTuraPageState extends State<YaziTuraPage>
     _controller.forward();
   }
 
-  Widget _buildCoin() { //Coin görselini oluşturan görsel
-    return AnimatedBuilder( // animasyonun her frame'inde tetiklenir
-      animation: _animation, 
+  Widget _buildCoin() {
+    //Coin görselini oluşturan görsel
+    return AnimatedBuilder(
+      // animasyonun her frame'inde tetiklenir
+      animation: _animation,
       builder: (context, child) {
-        final isFrontFace = (_animation.value % (2 * pi)) < pi; //açının 0 ile pi arasında olup olmadığını kontorl eder.
+        final isFrontFace =
+            (_animation.value % (2 * pi)) <
+            pi; //açının 0 ile pi arasında olup olmadığını kontorl eder.
 
-        return Transform( // coini 3D olarak y ekseni etrafında döndürür.
+        return Transform(
+          // coini 3D olarak y ekseni etrafında döndürür.
           alignment: Alignment.center,
           transform:
               Matrix4.identity()
@@ -86,7 +93,7 @@ class _YaziTuraPageState extends State<YaziTuraPage>
                     width: 200,
                     height: 200,
                   )
-                  : Transform( 
+                  : Transform(
                     alignment: Alignment.center,
                     transform: Matrix4.rotationY(pi),
                     child: Image.asset(
@@ -100,13 +107,15 @@ class _YaziTuraPageState extends State<YaziTuraPage>
     );
   }
 
-  String getResultText() { //Sonuç yazısını döndüren fonksiyon 
+  String getResultText() {
+    //Sonuç yazısını döndüren fonksiyon
     if (_isFlipping) return "Dönüyor...";
     return _isFront ? "YAZI" : "TURA";
   }
 
   @override
-  void dispose() { //Sayfa kapatılırken animasyon kontrolcüsü bellekten temizler
+  void dispose() {
+    //Sayfa kapatılırken animasyon kontrolcüsü bellekten temizler
     _controller.dispose();
     super.dispose();
   }
@@ -118,6 +127,7 @@ class _YaziTuraPageState extends State<YaziTuraPage>
         centerTitle: true,
         title: const Text('Yazı Tura', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.deepPurple[900],
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       backgroundColor: Colors.deepPurple[500],
       body: Center(
