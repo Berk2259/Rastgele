@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:rastgele/pages/pages.dart';
+import 'package:rastgele/pages/FavoritePage.dart';
+import 'package:rastgele/pages/HomePage.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -11,8 +13,24 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 1;
+  Set<String> _favorites = {};
 
-  final List<Widget> _pages = [FavoritePage(), HomePage(), ProfilePage()];
+  void _toggleFavorite(String id) {
+    setState(() {
+      if (_favorites.contains(id)) {
+        _favorites.remove(id);
+      } else {
+        _favorites.add(id);
+      }
+    });
+  }
+
+  List<Widget> get _pages => [
+        FavoritePage(favorites: _favorites, onFavoriteToggle: _toggleFavorite),
+        HomePage(favorites: _favorites, onFavoriteToggle: _toggleFavorite),
+        ProfilePage(),
+      ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
